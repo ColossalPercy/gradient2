@@ -16,7 +16,6 @@ module.exports = class Gradient {
       throw new Error('More stops than steps')
     }
     if (args.model && !(args.model === 'rgb' || args.model === 'hsl')) {
-      console.log(args.model)
       throw new Error('Model must be rgb or hsl')
     }
 
