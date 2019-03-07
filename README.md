@@ -50,7 +50,7 @@ let gradient = new Gradient({
 
 | Property | Type  | Default | Required | Description | Accepted Values |
 |----------|-------|---------|----------|-------------|-----------------|
-| `colors` | Array | `null`  | `true`   | Array of colors to be used in the gradient. | <ul> <li>An array of [color-strings](https://github.com/Qix-/color-string#readme)</li> <li>An array of objects specifying the color and position of the stop ```js { color: '#f00', pos: 50 } ``` </li> </ul>|
+| `colors` | Array | `null`  | `true`   | Array of colors to be used in the gradient. | <ul> <li>An array of [color-strings](https://github.com/Qix-/color-string#readme)</li> <li>An array of objects specifying the color-string and position of the stop ```js { color: '#f00', pos: 50 } ``` </li> </ul>|
 | `steps` | Number | `null` | `true` | The number of steps to be taken in the gradient | Positive integer |
 | `model` | String | `rgb` | `false` | The color model to use when interpolating between colors | `rgb` or `hsl` |
 </center>
