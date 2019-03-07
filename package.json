@@ -1,0 +1,32 @@
+{
+  "name": "gradient2",
+  "version": "1.0.0",
+  "description": "generate a gradient as an array of Color objects",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "eslint index.js --fix",
+    "test": "jest --coverage",
+    "precommit": "npm test"
+  },
+  "repository": "colossalpercy/gradient2",
+  "keywords": [
+    "gradient",
+    "color"
+  ],
+  "author": "ColossalPercy",
+  "license": "MIT",
+  "dependencies": {
+    "color": "^3.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jest": "^22.3.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "husky": "^1.3.1",
+    "jest": "^24.1.0"
+  }
+}
