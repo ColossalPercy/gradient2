@@ -83,6 +83,16 @@ test('equal number stops and steps', () => {
   }).toArray('hex')).toEqual(['#FF0000', '#00FF00', '#0000FF'])
 })
 
+test('incorrect model type', () => {
+  expect(() => {
+    new Gradient({
+      colors: ['#f00', '#0f0', '#00f'],
+      steps: 3,
+      model: 'f00'
+    })
+  }).toThrow('Model must be rgb or hsl')
+})
+
 // test using custom positions
 test('create gradient with custom positions', () => {
   expect(

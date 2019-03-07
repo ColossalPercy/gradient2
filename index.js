@@ -15,6 +15,10 @@ module.exports = class Gradient {
     if (args.colors.length > args.steps) {
       throw new Error('More stops than steps')
     }
+    if (args.model && !(args.model === 'rgb' || args.model === 'hsl')) {
+      console.log(args.model)
+      throw new Error('Model must be rgb or hsl')
+    }
 
     // check if custom positions provided
     if (typeof args.colors[0].pos !== 'undefined') {
