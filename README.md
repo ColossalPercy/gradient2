@@ -2,6 +2,8 @@
 
 > A JavaScript library for creating color gradients using the [color](https://github.com/Qix-/color) library. The project started as an update to [Gradient.js](https://github.com/tstone/Gradient.js) but soon became almost completely rewritten. 
 
+[![Build Status](https://travis-ci.org/ColossalPercy/gradient2.svg?branch=master)](https://travis-ci.org/ColossalPercy/gradient2)
+
 ## Getting Started
 
 Gradient2 can be used both client-side and server-side to generate gradients of colour. Follow the instructions below to get started.
