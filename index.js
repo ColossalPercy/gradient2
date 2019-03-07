@@ -66,6 +66,9 @@ module.exports = class Gradient {
       console.warn('Number of stops equals steps, no extra colors generated')
       this.__cache = this.stops
     }
+
+    // create gradient
+    this.create()
   }
 
   // HSL - build given number of steps, excluding start and end
@@ -155,7 +158,7 @@ module.exports = class Gradient {
   }
 
   // to array
-  toArray (format) {
+  create () {
     // generate gradient steps
     if (typeof this.__cache === 'undefined') {
       // total number of sets of colors
@@ -219,7 +222,9 @@ module.exports = class Gradient {
       // cache gradient array to prevent calculating again
       this.__cache = colors
     }
+  }
 
+  toArray (format) {
     // return in specified format
     if (typeof format !== 'undefined') {
       return this.__cache.map(x => {
