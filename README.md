@@ -13,7 +13,7 @@ Gradient2 can be used both client-side and server-side to generate gradients of 
 Gradient2 can be installed from npm.
 
 ```
-$ npm install gradient2 --save-dev
+$ npm install gradient2
 ```
 
 ## Usage
