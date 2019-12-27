@@ -1,7 +1,7 @@
 let Color = require('color')
 
 module.exports = class Gradient {
-  constructor (args) {
+  constructor(args) {
     // check for args
     if (!args) throw new Error('No arguments recieved')
 
@@ -75,7 +75,7 @@ module.exports = class Gradient {
   }
 
   // HSL - build given number of steps, excluding start and end
-  buildStepsHSL (start, end, span) {
+  buildStepsHSL(start, end, span) {
     // get start color
     let base = {
       h: start.hue(),
@@ -126,7 +126,7 @@ module.exports = class Gradient {
   }
 
   // RGB - build given number of steps, excluding start and end
-  buildStepsRGB (start, end, span) {
+  buildStepsRGB(start, end, span) {
     // get start color
     let base = {
       r: start.red(),
@@ -161,7 +161,7 @@ module.exports = class Gradient {
   }
 
   // to array
-  create () {
+  create() {
     // generate gradient steps
     if (typeof this.__cache === 'undefined') {
       // total number of sets of colors
@@ -227,7 +227,7 @@ module.exports = class Gradient {
     }
   }
 
-  toArray (format) {
+  toArray(format) {
     // return in specified format
     if (typeof format !== 'undefined') {
       return this.__cache.map(x => {
