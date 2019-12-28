@@ -4,7 +4,8 @@
   "description": "generate a gradient as an array of Color objects",
   "main": "index.js",
   "scripts": {
-    "pretest": "eslint index.js --fix",
+    "lint": "eslint index.js --fix",
+    "pretest": "npm run lint",
     "test": "jest --coverage"
   },
   "repository": "colossalpercy/gradient2",
@@ -25,12 +26,9 @@
     "eslint-plugin-node": "^8.0.1",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "husky": "^1.3.1",
     "jest": "^24.9.0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm test"
-    }
-  }
+  "files": [
+    "index.js"
+  ]
 }
