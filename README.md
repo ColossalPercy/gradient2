@@ -2,7 +2,8 @@
 
 > A JavaScript library for creating color gradients using the [color](https://github.com/Qix-/color) library. The project started as an update to [Gradient.js](https://github.com/tstone/Gradient.js) but soon became almost completely rewritten. 
 
-[![Build Status](https://travis-ci.org/ColossalPercy/gradient2.svg?branch=master)](https://travis-ci.org/ColossalPercy/gradient2)
+![npm](https://img.shields.io/npm/v/gradient2)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/colossalpercy/gradient2/Test%20NPM%20package)
 
 ## Getting Started
 
